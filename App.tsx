@@ -1,25 +1,34 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
+ * Wallet App with Reown AppKit
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import React from 'react';
+import { StatusBar, StyleSheet, useColorScheme, View, SafeAreaView } from 'react-native';
+import { AppKit } from '@reown/appkit-ethers-react-native';
+import ConnectView from './src/ConnectView';
+
+// AppKit is initialized in appkitInit.js before this file is loaded
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.safeArea}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
-    </View>
+      <View style={styles.container}>
+        <ConnectView />
+        {/* This is the modal that will show available wallets */}
+        <AppKit />
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+  },
   container: {
     flex: 1,
   },

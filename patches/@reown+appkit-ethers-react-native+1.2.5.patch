@@ -1,0 +1,13 @@
+diff --git a/lib/commonjs/utils/walletConnectUtils.js b/lib/commonjs/utils/walletConnectUtils.js
+index abcdefg..hijklmn 100644
+--- a/lib/commonjs/utils/walletConnectUtils.js
++++ b/lib/commonjs/utils/walletConnectUtils.js
+@@ -1,7 +1,7 @@
+ "use strict";
+ 
+ Object.defineProperty(exports, "__esModule", { value: true });
+-const url = import.meta.url;
++const url = "react-native://";
+ 
+ function formatMobileRegistry(data) {
+   return {

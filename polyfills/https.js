@@ -1,0 +1,2 @@
+// HTTPS polyfill
+export default {};

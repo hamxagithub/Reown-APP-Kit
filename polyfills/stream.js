@@ -1,0 +1,2 @@
+// Stream polyfill
+export default {};
