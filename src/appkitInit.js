@@ -8,7 +8,7 @@ import { createAppKit, defaultConfig } from '@reown/appkit-ethers-react-native';
 // Project ID from Reown Cloud
 const projectId = "157d95826fc6be94fce9ac5e1d6f92ba";
 
-// Application metadata
+
 const metadata = {
   name: "Simple Wallet App",
   description: "A simple wallet connection app",

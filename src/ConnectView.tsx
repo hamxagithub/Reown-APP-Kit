@@ -11,7 +11,7 @@ export default function ConnectView() {
   const { address, isConnected, chainId } = useAppKitAccount();
   const { disconnect } = useDisconnect();
 
-  // Format address for display
+
   const shortenedAddress = address ? 
     `${address.slice(0, 6)}...${address.slice(-4)}` : '';
 
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#56a2dcff",
   },
   title: {
     fontSize: 22,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   connectButton: {
-    backgroundColor: "#3396FF",
+    backgroundColor: "#05792aff",
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 8,
