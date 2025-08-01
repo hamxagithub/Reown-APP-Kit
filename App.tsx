@@ -17,7 +17,7 @@ function App() {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <View style={styles.container}>
         <ConnectView />
-        {/* This is the modal that will show available wallets */}
+     
         <AppKit />
       </View>
     </SafeAreaView>

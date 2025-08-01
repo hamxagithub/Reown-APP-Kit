@@ -34,7 +34,7 @@ export default function ConnectView() {
             {shortenedAddress}
           </Text>
           <Text style={styles.networkText}>
-            Chain ID: {chainId || 'Unknown'}
+            Chain ID: {chainId }
           </Text>
         </View>
       )}
